@@ -205,7 +205,7 @@ Resources:
         prowler-reports:
           files:
             /home/ec2-user/run-prowler-reports.sh:
-              source: !Sub https://${ProwlerS3}.s3.${AWS::Region}.amazonaws.com/run-prowler-reports.sh
+              source: !Sub https://${ProwlerS3}.s3.amazonaws.com/run-prowler-reports.sh
               mode: "000700"
               owner: ec2-user
               group: ec2-user
